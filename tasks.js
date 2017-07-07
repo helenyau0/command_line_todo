@@ -1,6 +1,6 @@
-const list = require('./list')
-const add = require('./add')
-const done = require('./done')
+const list = require('./commands/list')
+const add = require('./commands/add')
+const done = require('./commands/done')
 
 const todo = () => {
   const command = process.argv[2]
