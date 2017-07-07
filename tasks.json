@@ -1,1 +1,2 @@
-["cry","sleep","eat","die"]
+["cry","sleep","eat","die","wow","so","serious"]
+// also I would not check this file in. Instead I would add it to your .gitignore and make sure your code can create this file when it doesnt exist
