@@ -6,7 +6,13 @@ const list = () => {
     const taskArray = JSON.parse(data)
     console.log('ID Description');
     console.log('-- -----------');
-    taskArray.forEach((task, i) => console.log(`${i+1}  ${task}`))
+    // you should only use the `x => y` function syntax when the return value is used
+    // example: `[1,2,3].map(n => n + 10)`
+    // in this case do 
+    taskArray.forEach((task, index) => {
+      console.log(`${index+1}  ${task}`) 
+    })
+    // also avoid small variable names like `i` use a clear and specific variable whenever possible
     console.log('\n' + taskArray.length + ' tasks.');
   })
 }
