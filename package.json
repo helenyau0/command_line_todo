@@ -1,0 +1,24 @@
+{
+  "name": "command_line_todo",
+  "version": "1.0.0",
+  "description": "Command Line Todo List",
+  "main": "tasks.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "initdb": "psql < schema.sql",
+    "db": "psql todo_list < schema2.sql"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/helenyau0/command_line_todo.git"
+  },
+  "author": "Helen Yau",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/helenyau0/command_line_todo/issues"
+  },
+  "homepage": "https://github.com/helenyau0/command_line_todo#readme",
+  "dependencies": {
+    "pg": "^7.0.1"
+  }
+}
