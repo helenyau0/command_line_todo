@@ -1,5 +1,5 @@
 const fs = require('fs')
-const db = require('../database')
+const addTask = require('../database')
 
 const add = (newTask) => {
   fs.readFile('./tasks.json', 'utf-8', (error, data) => {
@@ -10,7 +10,7 @@ const add = (newTask) => {
       const tasks = JSON.stringify(taskArray)
       fs.writeFile('./tasks.json', tasks, (error, data) => {
         if (error) throw error
-        db(newTask)
+        addTask(newTask)
         console.log('Created task ' + taskArray.length);
       })
     } else {
@@ -19,7 +19,7 @@ const add = (newTask) => {
       const tasks = JSON.stringify(taskArray)
       fs.writeFile('./tasks.json', tasks, (error, data) => {
         if (error) throw error
-        db(newTask)
+        addTask(newTask)
         console.log('Created task ' + taskArray.length);
       })
     }
