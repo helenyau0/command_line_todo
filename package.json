@@ -5,6 +5,7 @@
   "main": "tasks.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "initdb": "psql < schema.sql",
     "db": "psql todo_list < schema2.sql"
   },
   "repository": {
