@@ -7,7 +7,7 @@ const addTask = (todo) => {
   if(isNaN(todo)) {
     return client.query('INSERT INTO task(task) VALUES($1)', [todo], (err, res) => {
       if (err) {
-        console.log('whaaat',err.stack)
+        console.log(err.stack)
       } else {
         return res
       }
